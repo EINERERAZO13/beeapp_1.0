@@ -5,65 +5,55 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+
     <title>BEEAPP!</title>
 
 </head>
-<style>
-    header {
-        background-color: rgb(237, 207, 15)
-    }
-</style>
+
 
 <body>
 
-    <header>
-        <center><img src="{{ URL::asset('imagenes/logo_bee.svg') }}" width="200"></center>
-        <div class="col-12">
-            <div class="border-atas-bawah">
-                <div class="text-berjalan text-white">
-                    <H1>
-                        <marquee height="40" scrolldelay="40">BIENVENIDO AL MUNDO DE LAS ABEJAS</marquee>
-                    </H1>
-                </div>
+    <header  class="p-3 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            
+            </a>
+             <ul id="menu2"  class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-left mb-md-0">
+              <li><a  href="#"  class="nav-link px-2 text-yellow">Home</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2">Login</button>
+              <button type="button" class="btn btn-warning">Sign-up</button>
             </div>
+            <div> <img id="logo" src="{{ URL::asset('imagenes/logo_bee.svg') }}"></div>
+          </div>
         </div>
-    </header>
-   
-    </section>
-    <div class="p-3 mb-2 bg-dark text-white">
+        
+      </header>
 
 
-        <ul class="nav nav-pills mb-3 justify-content-around">
 
 
-            <li class="nav-item">
-                <h2><a class="text-primary" class="nav-link" href="http://127.0.0.1:8000/">INICIO</a>
-            </li>
-            <li class="nav-item">
-                <h3><a class="text-warning bg-dark" class="nav-link"
-                        href="http://127.0.0.1:8000/profesores/create">MENU</a></h3>
-            </li>
-            <li class="nav-item">
-                <h3><a class="text-warning bg-dark" class="nav-link"
-                        href="http://127.0.0.1:8000/grupos/create">PRODUCTOS</a></h3>
-            </li>
-            <li class="nav-item">
-                <h3><a class="text-warning bg-dark" class="nav-link"
-                        href="http://127.0.0.1:8000/materias/create"></a></h3>
-                <div class="text-end">
-                    <a href="usuario/vista/add.php">
-                        <button type="button" class="btn btn-light text-dark me-2">Registrarse</button></a>
-                    <a href="usuario/vista/login.php">
-                        <button type="button" class="btn btn-primary">Iniciar sesion</button></a>
 
-                </div>
-        </ul>
-    </div>
+    <h1 id="letra_movimiento">
+        <marquee height="40" scrolldelay="40">BIENVENIDO AL MUNDO DE LAS ABEJAS</marquee>
+    </h1>
+
     <div class="container">
         @yield('plantillaweb')
     </div>

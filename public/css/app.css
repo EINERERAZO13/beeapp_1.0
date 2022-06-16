@@ -1,0 +1,28 @@
+#header {
+    background-color: rgb(255, 255, 255);
+    width: 1950px;
+    height: 100px; 
+    text-align: left;   
+}
+#logo{
+    width: 150px;
+   height: 90px;
+     
+}
+#letra_movimiento{
+    color: rgb(255, 238, 0);
+    background-color: black;
+    font-size: 25px;
+    height: 27px;
+}
+
+#a{
+    text-align: left;
+}
+
+
+
+#menu2{
+    text-align: left;
+
+}
